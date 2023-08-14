@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Unique Bank</title>
+    <!-- link tailwind & daysiUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <div class="h-[100vh] flex flex-col justify-center bg-indigo-400">
+      <div class="w-full lg:max-w-6xl lg:mx-auto py-12 md:py-24 px-4 sm:px-0">
+        <header>
+          <h1
+            class="text-center text-4xl md:text-6xl text-white font-medium mb-20"
+          >
+            Welcome to
+            <span class="text-indigo-800 font-bold">Unique Bank</span>!!!
+          </h1>
+        </header>
+        <main>
+          <div class="w-4/5 mx-auto bg-indigo-300 py-14 text-center rounded-md">
+            <form id="form" class="mx-auto w-3/4 space-y-3">
+              <h4 class="text-3xl font-bold text-indigo-600 mb-7">
+                Please Login
+              </h4>
+              <input
+                type="email"
+                id="email"
+                class="w-full py-2 px-3 focus:outline-none block"
+                placeholder="Enter your email..."
+              />
+              <input
+                type="password"
+                id="password"
+                class="w-full py-2 px-3 focus:outline-none block"
+                placeholder="Enter your password..."
+              />
+
+              <input
+                type="submit"
+                value="Submit"
+                class="bg-indigo-600 font-bold uppercase text-white hover:text-indigo-600 px-8 py-3 rounded-md hover:bg-white border-2 border-transparent hover:border-indigo-600"
+              />
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Modal -->
+    <dialog id="my_modal_2" class="modal">
+      <form method="dialog" class="modal-box rounded-md">
+        <h3 id="modal-text" class="text-lg text-red-500 text-center"></h3>
+      </form>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
